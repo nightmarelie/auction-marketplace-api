@@ -4,6 +4,7 @@
   "description": "Auction Marketplace(API)",
   "main": "app.js",
   "scripts": {
+    "watch": "nodemon app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,10 +20,15 @@
   },
   "homepage": "https://github.com/nightmarelie/auction-marketplace-api#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
   }
 }
