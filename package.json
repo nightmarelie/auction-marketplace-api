@@ -1,0 +1,28 @@
+{
+  "name": "auction-marketplace-api",
+  "version": "1.0.0",
+  "description": "Auction Marketplace(API)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightmarelie/auction-marketplace-api.git"
+  },
+  "keywords": [],
+  "author": "Aleksey Kryvtsov <nightmarelie@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nightmarelie/auction-marketplace-api/issues"
+  },
+  "homepage": "https://github.com/nightmarelie/auction-marketplace-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
