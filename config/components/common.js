@@ -3,7 +3,7 @@
 const joi = require('joi');
 
 const envSchema = {
-    NODE_ENV: joi.string().allow(['development', 'production']).required(),
+    NODE_ENV: joi.string().allow(['development', 'production', 'test']).required(),
     PROCESS_TYPE: joi.string().allow(['web', 'lots-postprocessor']).required(),
 };
 

@@ -4,9 +4,12 @@
   "description": "Auction Marketplace(API)",
   "main": "app.js",
   "scripts": {
-    "watch": "nodemon app.js",
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "NODE_ENV=development nodemon app.js",
+    "start:prod": "NODE_ENV=production node app.js",
+    "start:prod:lot-postprocessor": "NODE_ENV=production PROCESS_TYPE=lots-postprocessor npm app.js",
+    "start": "npm run start:prod",
+    "test:web": "NODE_ENV=test PROCESS_TYPE=web mocha test/setup.js 'web/**/*.spec.js'",
+    "test": "npm run test:web"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,9 @@
     "express": "^4.16.4",
     "joi": "^14.3.0",
     "mongoose": "^5.4.0",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "sinon": "^7.2.2",
+    "sinon-chai": "^3.3.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",

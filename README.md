@@ -6,3 +6,25 @@
 PORT=\d{3,}
 NODE_ENV=[`'development' | 'production'`]
 PROCESS_TYPE=[`'web' | 'lots-postprocessor'`]
+
+## Processes
+### Web
+```shell
+$ npm start
+```
+#### Environment variables
+  - `NODE_ENV` (`'development' | 'production'`)
+  - `PORT`
+
+### Lots postprocessor
+```shell
+$ npm run start:prod:lot-postprocessor
+```
+#### Environment variables
+  - `NODE_ENV` (`'development' | 'production'`)
+  - `PORT`
+
+## Run tests
+```shell
+$ npm test
+```
