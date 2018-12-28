@@ -8,7 +8,7 @@ router.use('/users', require('./users'));
 // router.use('/orders', require('./orders'))
 
 router.get('/', (req, res) => {
-    res.end('Hello index page');
+    res.render('layout', { title: 'Main page', message: 'Hello index page' });
 });
 
 module.exports = router;
