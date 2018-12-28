@@ -5,3 +5,4 @@
 #### All are required
 PORT=\d{3,}
 NODE_ENV=[`'development' | 'production'`]
+PROCESS_TYPE=[`'web' | 'lots-postprocessor'`]
