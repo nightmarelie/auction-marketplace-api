@@ -6,6 +6,7 @@
 PORT=\d{3,}
 NODE_ENV=[`'development' | 'production'`]
 PROCESS_TYPE=[`'web' | 'lots-postprocessor'`]
+MONGODB_URI
 
 ## Processes
 ### Web
@@ -15,6 +16,7 @@ $ npm start
 #### Environment variables
   - `NODE_ENV` (`'development' | 'production'`)
   - `PORT`
+  - `MONGODB_URI`
 
 ### Lots postprocessor
 ```shell
