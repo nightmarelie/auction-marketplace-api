@@ -20,7 +20,7 @@ const joiSchema = joi.object({
     // birthDay is required
     // and must be a date. 
     // Age must be > 21
-    birthDay: joi.date().min(new Date((new Date()).getFullYear()-21, 0, 0)).required(),
+    birthDay: joi.date().max(new Date((new Date()).getFullYear()-21, 0, 0)).required(),
     // password is required
     // and must contain alphanumeric characters and numbers
     // at least 3 characters long but no more than 30
